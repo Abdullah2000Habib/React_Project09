@@ -1,4 +1,5 @@
 import React from 'react';
+import Trivia from '../Trivia';
 import { Bottom, MainWrapper, Timer, Top } from './style';
 
 export default function Main() {
@@ -8,7 +9,9 @@ export default function Main() {
           <Top>
             <Timer>30</Timer>
           </Top>
-          <Bottom>Questions and Answers</Bottom>
+          <Bottom>
+            <Trivia/>
+          </Bottom>
         </MainWrapper>
     </>
   )

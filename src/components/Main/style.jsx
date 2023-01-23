@@ -7,7 +7,6 @@ width: 75%;
 background:linear-gradient(to bottom ,rgba(0,0,0,0),#020230),url(${mainImg}) center;
 display:flex;
 flex-direction: column;
-
 `
 export const Top = styled("div")`
 label =Top;
