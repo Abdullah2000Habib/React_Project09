@@ -1,10 +1,15 @@
 import React from 'react';
-import { MainWrapper } from './style';
+import { Bottom, MainWrapper, Timer, Top } from './style';
 
 export default function Main() {
   return (
     <>
-        <MainWrapper>ff</MainWrapper>
+        <MainWrapper>
+          <Top>
+            <Timer>30</Timer>
+          </Top>
+          <Bottom>Questions and Answers</Bottom>
+        </MainWrapper>
     </>
   )
 }
