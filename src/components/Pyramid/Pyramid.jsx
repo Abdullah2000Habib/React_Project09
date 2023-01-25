@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { moneyPyramid } from './Data';
 import { MoneyList, MoneyListItem, MoneyListItemAmount, MoneyListItemNumber, PyramidWrapper } from './style';
 
-export default function Pyramid() {
-  const [questionNumber,setQuestioinNumber] =useState(1);
+export default function Pyramid({questionNumber}) {
+
   return (
     <>
         <PyramidWrapper>

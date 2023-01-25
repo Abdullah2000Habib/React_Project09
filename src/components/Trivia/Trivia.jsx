@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Answer, Answers, Question, TriviaWrapper } from './style';
 
-export default function Trivia() {
+export default function Trivia({data,questionNumber,setTimeOut,setQuestioinNumber}) {
+    const [question,setQuestion]=useState(null);
+    const [selectAnswer,setSelectAnswer]=useState(null);
+    useEffect(()=>{
+        setQuestion(data[questionNumber-1])
+    },[data,questionNumber])
+    const handleClick = (answer)=>{
+        setSelectAnswer(answer)
+    }
 return (
     <>
         <TriviaWrapper>
-            <Question>What's the best youtube channel??</Question>
+            <Question>{question?.question}</Question>
             <Answers>
-                <Answer correct={true}>Lama Dev</Answer>
-                <Answer wrong={true}>Lama Dev</Answer>
-                <Answer>Lama Dev</Answer>
-                <Answer>Lama Dev</Answer>
+                {question?.answers.map((item)=>{
+                    return(<Answer active={selectAnswer === item} onClick={()=>handleClick(item)} >{item.text}</Answer>)
+                })}
             </Answers>
         </TriviaWrapper>
     </>
