@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "zignd.html-css-class-completion",
+        "ccjr.emotion-auto-css"
+    ]
+}
