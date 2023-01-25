@@ -26,8 +26,8 @@ label =Top;
 height: 50%;
 position: relative;
 `
-export const Timer = styled("div")`
-label =Timer;
+export const Timerr = styled("div")`
+label =Timerr;
 width: 70px;
 height: 70px;
 border-radius: 50%;
