@@ -7,6 +7,19 @@ width: 75%;
 background:linear-gradient(to bottom ,rgba(0,0,0,0),#020230),url(${mainImg}) center;
 display:flex;
 flex-direction: column;
+position: relative;
+`
+export const H1 = styled("h1")`
+label =H1;
+width: fit-content;
+padding: 10px;
+position: absolute;
+color: black;
+left: 50%;
+top: 50%;
+transform:translate(-50%,-50%);
+background-color: white;
+border-radius: 8px;
 `
 export const Top = styled("div")`
 label =Top;
